@@ -1,6 +1,9 @@
+package basics;
 
 // la classe principale : fichier de démarrage
-public class Main {
+// - nom simple: Application
+// - nom complet: basics.Application
+public class Application {
 
     // point d'entrée du programme
     public static void main(String[] args) {
