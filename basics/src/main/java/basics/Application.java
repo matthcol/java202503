@@ -1,5 +1,7 @@
 package basics;
 
+import java.text.MessageFormat;
+
 // la classe principale : fichier de démarrage
 // - nom simple: Application
 // - nom complet: basics.Application
@@ -23,5 +25,15 @@ public class Application {
         System.out.println("Mots en français: été, cœur, L'Haÿ-les-Roses, L'HAŸ-LES-ROSES");
         System.out.println("東京");
         System.out.println("🦜❤️");
+
+        String word = "Kayak";
+        boolean ok = WordGame.isWordPalindrome(word);
+        System.out.println(MessageFormat.format(
+                "{0} est un palindrome : {1}",
+                word, ok
+        ));
+
+        int g = NumberGame.pgcd(12, 16);
+        System.out.println("Pgcd : " + g);
     }
 }

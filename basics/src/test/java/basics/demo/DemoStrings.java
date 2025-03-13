@@ -1,4 +1,4 @@
-package basics;
+package basics.demo;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -302,8 +302,8 @@ public class DemoStrings {
 
     @Test
     void demoListeVilles(){
-        // List<String> cities = new ArrayList<>(); // liste vide
-        List<String> cities = new LinkedList<>(); // liste vide
+        List<String> cities = new ArrayList<>(); // liste vide
+//        List<String> cities = new LinkedList<>(); // liste vide
         System.out.println(cities);
 
         cities.add("Montauban");

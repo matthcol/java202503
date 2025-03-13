@@ -1,4 +1,4 @@
-package basics;
+package basics.demo;
 
 import org.junit.jupiter.api.Test;
 
