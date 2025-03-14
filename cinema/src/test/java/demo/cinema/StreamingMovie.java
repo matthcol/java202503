@@ -28,4 +28,15 @@ public class StreamingMovie {
                 .limit(10)
                 .forEach(System.out::println);
     }
+
+    @Test
+    void demoStream2(){
+        var totalDuration2000 = movieList.stream()
+                .filter(movie -> movie.getYear() == 2000)
+                .peek(movie -> System.out.println("After filter: " + movie))
+                .mapToInt(Movie::getDuration)
+                .peek(duration -> System.out.println("Durée : " + duration))
+                .sum();
+        System.out.println("Durée totale : " + totalDuration2000);
+    }
 }
