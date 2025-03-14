@@ -57,4 +57,10 @@ class MovieDemo {
                 ));
     }
 
+    @Test
+    void demoConstante(){
+        System.out.println(Movie.MIN_YEAR);
+        // Movie.MIN_YEAR = 1955; // Cannot assign a value to final variable 'MIN_YEAR'
+    }
+
 }

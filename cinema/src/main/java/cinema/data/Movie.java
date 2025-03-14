@@ -10,6 +10,10 @@ import lombok.*;
 @AllArgsConstructor
 public class Movie {
 
+    // attribut de classe: 1 seul exemplaire
+    public static final short MIN_YEAR = 1888;
+
+    // attributs/champs (attributes/fields)
     private int id;
     private String title;  // JEE Bean Validation: @NotNull, @NotBlank
     private short year;
