@@ -175,6 +175,18 @@ public class DemoTemps {
         System.out.println(zdt);
     }
 
+    @Test
+    void demoTimezones2(){
+        Stream.of(
+                ZoneId.of("Asia/Tokyo"),
+                ZoneId.of("Australia/Sydney"),
+                ZoneId.of("Europe/Paris"),
+                ZoneId.of("Europe/London"),
+                ZoneId.of("America/New_York"),
+                ZoneId.of("America/Los_Angeles")
+        ).forEach(tz -> System.out.println(tz + " : " + ZonedDateTime.now(tz)));
+    }
+
 }
 
 
